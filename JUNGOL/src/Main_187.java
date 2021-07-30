@@ -1,4 +1,4 @@
-package Jungol;
+
 import java.util.*;
 
 public class Main_187 {
