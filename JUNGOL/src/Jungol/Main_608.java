@@ -1,3 +1,4 @@
+package Jungol;
 import java.util.Scanner;
 
 public class Main_608 {
