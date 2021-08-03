@@ -1,3 +1,4 @@
+package Langauge_Coder;
 import java.util.Arrays;
 import java.util.Scanner;
 
