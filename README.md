@@ -24,5 +24,5 @@
 
 #### 위클리 챌린지(Weekly Challenge)
 
-- Level2
+- Level1
   - 1주차 - 부족한 금액 계산하기
