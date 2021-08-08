@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Main_Çà·ÄÅ×µÎ¸®È¸ÀüÇÏ±â {
+public class Main_í–‰ë ¬í…Œë‘ë¦¬íšŒì „í•˜ê¸° {
 	public static void main(String[] args) {
 		int rows = 6;
 		int columns = 6;
@@ -32,22 +32,22 @@ public class Main_Çà·ÄÅ×µÎ¸®È¸ÀüÇÏ±â {
 
 			List<Integer> list = new ArrayList<Integer>();
 
-			// À§ÂÊ
+			// ï¿½ï¿½ï¿½ï¿½
 			for (int j = y1; j <= y2; j++) {
 				list.add(map[x1][j]);
 			}
 
-			// ¿À¸¥ÂÊ
+			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			for (int j = x1 + 1; j <= x2; j++) {
 				list.add(map[j][y2]);
 			}
 
-			// ¾Æ·¡ÂÊ
+			// ï¿½Æ·ï¿½ï¿½ï¿½
 			for (int j = y2 - 1; j >= y1; j--) {
 				list.add(map[x2][j]);
 			}
 
-			// ¿ŞÂÊ
+			// ï¿½ï¿½ï¿½ï¿½
 			for (int j = x2 - 1; j >= x1 + 1; j--) {
 				list.add(map[j][y1]);
 			}
@@ -60,9 +60,9 @@ public class Main_Çà·ÄÅ×µÎ¸®È¸ÀüÇÏ±â {
 
 			int key = 0;
 			boolean isChecked = true;
-			// À§ÂÊ
+			// ï¿½ï¿½ï¿½ï¿½
 			for (int j = y1; j <= y2; j++) {
-				// Á¦ÀÏ Ã¹¹øÂ°²¨´Â »©µÎ°í ½ÃÀÛÇÏ·Á°í
+				// ï¿½ï¿½ï¿½ï¿½ Ã¹ï¿½ï¿½Â°ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï·ï¿½ï¿½ï¿½
 				if (isChecked) {
 					isChecked = false;
 				} else {
@@ -71,9 +71,9 @@ public class Main_Çà·ÄÅ×µÎ¸®È¸ÀüÇÏ±â {
 				}
 			}
 
-			// ¿À¸¥ÂÊ
+			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			for (int j = x1 + 1; j <= x2; j++) {
-				// Á¦ÀÏ Ã¹¹øÂ°²¨´Â »©µÎ°í ½ÃÀÛÇÏ·Á°í
+				// ï¿½ï¿½ï¿½ï¿½ Ã¹ï¿½ï¿½Â°ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï·ï¿½ï¿½ï¿½
 				if (isChecked) {
 					isChecked = false;
 				} else {
@@ -82,9 +82,9 @@ public class Main_Çà·ÄÅ×µÎ¸®È¸ÀüÇÏ±â {
 				}
 			}
 
-			// ¾Æ·¡ÂÊ
+			// ï¿½Æ·ï¿½ï¿½ï¿½
 			for (int j = y2 - 1; j >= y1; j--) {
-				// Á¦ÀÏ Ã¹¹øÂ°²¨´Â »©µÎ°í ½ÃÀÛÇÏ·Á°í
+				// ï¿½ï¿½ï¿½ï¿½ Ã¹ï¿½ï¿½Â°ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï·ï¿½ï¿½ï¿½
 				if (isChecked) {
 					isChecked = false;
 				} else {
@@ -93,9 +93,9 @@ public class Main_Çà·ÄÅ×µÎ¸®È¸ÀüÇÏ±â {
 				}
 			}
 
-			// ¿ŞÂÊ
+			// ï¿½ï¿½ï¿½ï¿½
 			for (int j = x2 - 1; j >= x1; j--) {
-				// Á¦ÀÏ Ã¹¹øÂ°²¨´Â »©µÎ°í ½ÃÀÛÇÏ·Á°í
+				// ï¿½ï¿½ï¿½ï¿½ Ã¹ï¿½ï¿½Â°ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï·ï¿½ï¿½ï¿½
 				if (isChecked) {
 					isChecked = false;
 				} else {
