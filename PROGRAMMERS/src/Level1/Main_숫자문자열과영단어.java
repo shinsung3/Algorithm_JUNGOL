@@ -3,7 +3,7 @@ package Level1;
 
 import java.util.HashMap;
 
-public class Main_¼ıÀÚ¹®ÀÚ¿­°ú¿µ´Ü¾î {
+public class Main_ìˆ«ìë¬¸ìì—´ê³¼ì˜ë‹¨ì–´ {
 	public static void main(String[] args) {
 		String s = "2three45sixseven";
 		int a = solution(s);
