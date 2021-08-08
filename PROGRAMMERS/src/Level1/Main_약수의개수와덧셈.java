@@ -1,6 +1,6 @@
 package Level1;
 
-public class Main_¾à¼öÀÇ°³¼ö¿Íµ¡¼À {
+public class Main_ì•½ìˆ˜ì˜ê°œìˆ˜ì™€ë§ì…ˆ {
 	public static void main(String[] args) {
 		int left = 13;
 		int right = 17;
