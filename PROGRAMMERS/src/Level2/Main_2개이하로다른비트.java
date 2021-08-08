@@ -11,7 +11,6 @@ public class Main_2개이하로다른비트 {
 
 	static long[] solution(long[] numbers) {
 		long[] answer = new long[numbers.length];
-		String func[] = new String[numbers.length];
 		for (int i = 0; i < numbers.length; i++) {
 			long value = numbers[i];
 			String key = Long.toBinaryString(value);
