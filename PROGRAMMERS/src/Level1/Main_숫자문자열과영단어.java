@@ -3,7 +3,7 @@ package Level1;
 
 import java.util.HashMap;
 
-public class Main_숫자문자열과영단어 {
+public class Main_숫자문자열과영단어  {
 	public static void main(String[] args) {
 		String s = "2three45sixseven";
 		int a = solution(s);
