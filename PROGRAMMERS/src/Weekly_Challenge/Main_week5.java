@@ -20,7 +20,7 @@ public class Main_week5 {
 
 	static int solution(String word) {
 		int answer = 0;
-		// A 5개
+		// A 5개 
 		q = new LinkedList<String>();
 		set = new HashSet<String>();
 		setting("A");
