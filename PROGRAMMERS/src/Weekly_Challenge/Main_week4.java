@@ -36,7 +36,7 @@ public class Main_week4 {
 			}
 		}
 		answer = table[idx].split(" ")[0];
-		return answer;
+		return answer; 
 	}
 
 	static int calculate(String[] keys, int[] preference, String[] languages) {
