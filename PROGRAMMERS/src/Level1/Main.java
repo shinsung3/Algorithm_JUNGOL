@@ -1,55 +1,34 @@
 package Level1;
 
+import java.util.Arrays;
+import java.util.HashSet;
+
 public class Main {
+	// 1. Main Method ë§Œë“¤ê¸°
 	public static void main(String[] args) {
-		String new_id = "...!@BaT#*..y.abcdefghijklm123_-";
-		String a = solution(new_id);
-		System.out.println(a);
+		int[] numbers = { 2, 1, 3, 4, 1 };
+		int[] ans = solution(numbers);
+		System.out.println(Arrays.toString(ans));
 	}
 
-	static String solution(String new_id) {
-		String answer = "";
-
-		// 1´Ü°è new_idÀÇ ¸ðµç ´ë¹®ÀÚ¸¦ ´ëÀÀµÇ´Â ¼Ò¹®ÀÚ·Î Ä¡È¯ÇÕ´Ï´Ù.
-		new_id = new_id.toLowerCase();
-		System.out.println("1´Ü°è: "+new_id);
-
-		// 2´Ü°è new_id¿¡¼­ ¾ËÆÄºª ¼Ò¹®ÀÚ, ¼ýÀÚ, »©±â(-), ¹ØÁÙ(_), ¸¶Ä§Ç¥(.)¸¦ Á¦¿ÜÇÑ ¸ðµç ¹®ÀÚ¸¦ Á¦°ÅÇÕ´Ï´Ù.
-		StringBuilder sb = new StringBuilder();
-		for (int i = 0; i < new_id.length(); i++) {
-			char temp = new_id.charAt(i);
-			if ((temp >= 'a' && temp <= 'z') || temp == '_' || (temp-'0'>=0 && temp-'0'<=9) ||temp=='.' || temp=='-') {
-				sb.append(temp);
+	// 2. static ì“°ê³  ë’¤ì—ë¥¼ ë¶™ì¸ë‹¤.
+	static int[] solution(int[] numbers) {
+		HashSet<Integer> set = new HashSet<Integer>();
+		for (int i = 0; i < numbers.length - 1; i++) {
+			for (int j = i + 1; j < numbers.length; j++) {
+				set.add(numbers[i] + numbers[j]);
 			}
 		}
-		new_id = sb.toString();
-		System.out.println("2´Ü°è: "+new_id);
-		
-		// 3´Ü°è new_id¿¡¼­ ¸¶Ä§Ç¥(.)°¡ 2¹ø ÀÌ»ó ¿¬¼ÓµÈ ºÎºÐÀ» ÇÏ³ªÀÇ ¸¶Ä§Ç¥(.)·Î Ä¡È¯ÇÕ´Ï´Ù.
-		sb = new StringBuilder();
-		int cnt = 0;
-		for(int i=0; i<new_id.length(); i++) {
-			if(new_id.charAt(i)=='.') {
-				cnt++;
-			}else {
-				if(cnt!=0) {
-					sb.append(".").append(new_id.charAt(i));
-					cnt=0;
-					
-				}else {
-					sb.append(new_id.charAt(i));
-				}
-			}
-		}
-		new_id = sb.toString();
-		System.out.println("3´Ü°è: "+new_id );
-		
-		// 4´Ü°è new_id¿¡¼­ ¸¶Ä§Ç¥(.)°¡ Ã³À½ÀÌ³ª ³¡¿¡ À§Ä¡ÇÑ´Ù¸é Á¦°ÅÇÕ´Ï´Ù.
-		if(new_id.charAt(0)=='.') {
-			new_id = new_id.substring(1);
+
+		int[] answer = new int[set.size()];
+		int idx = 0;
+		for (int a : set) {
+			answer[idx] = a;
+			idx++;
 		}
 		
-		
+		Arrays.sort(answer);
+
 		return answer;
 	}
 }
