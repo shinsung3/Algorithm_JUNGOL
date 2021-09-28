@@ -15,4 +15,7 @@ public class Main_125 {
 			System.out.print(i+" ");
 		}
 	}
+	
+	
+	// 3 ~ 100 -> 3 5 7 9 11 .... 
 }
