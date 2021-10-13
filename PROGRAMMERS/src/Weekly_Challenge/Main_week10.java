@@ -5,8 +5,8 @@ import java.util.HashSet;
 
 public class Main_week10 {
 	public static void main(String[] args) {
-		String[] answer = solution(
-				new int[][] { { 100000, 100000, 100000 }, { 0, 100000, 100000 }, { 0, -1, 1 }, { 5, -8, -12 }, { 5, 8, 12 } });
+		String[] answer = solution(new int[][] { { 100000, 100000, 100000 }, { 0, 100000, 100000 }, { 0, -1, 1 },
+				{ 5, -8, -12 }, { 5, 8, 12 } });
 		System.out.println(Arrays.toString(answer));
 	}
 
@@ -22,13 +22,13 @@ public class Main_week10 {
 					int C = line[j][0];
 					int D = line[j][1];
 					int F = line[j][2];
-					long bunmo = (long)A * (long)D - (long)B * (long)C;
+					long bunmo = (long) A * (long) D - (long) B * (long) C;
 
 					// 분모가 0이라면 평행하거나 일치한 것. 아무것도 하지 않을 것임
 					if (bunmo != 0) {
 						isZero = false;
-						long bunjaOne = (long)B * (long)F - (long)D * (long)E;
-						long bunjaTwo = (long)C * (long)E - (long)A * (long)F;
+						long bunjaOne = (long) B * (long) F - (long) D * (long) E;
+						long bunjaTwo = (long) C * (long) E - (long) A * (long) F;
 
 						double x = (double) bunjaOne / (double) bunmo;
 						double y = (double) bunjaTwo / (double) bunmo;
@@ -44,7 +44,7 @@ public class Main_week10 {
 			}
 		}
 		if (isZero) {
-			return new String[] {"."};
+			return new String[] { "." };
 		} else {
 
 			long xMax = Long.MIN_VALUE;
@@ -67,8 +67,8 @@ public class Main_week10 {
 //			System.out.println(Arrays.toString(a));
 			}
 //		System.out.println(xMax + " " + xMin + " " + yMax + " " + yMin);
-			int len = (int)(yMax - yMin + 1);
-			int xLen = (int)(xMax - xMin + 1);
+			int len = (int) (yMax - yMin + 1);
+			int xLen = (int) (xMax - xMin + 1);
 			String[] answer = new String[len];
 
 			String temp = "";
